@@ -33,7 +33,7 @@ const initialState = {
 export default function reducer(state = initialState, action) {
   switch (action.type) {
     case "pizzas/add": {
-      console.log("this should be the payload:", action.payload);
+      console.log("pizza add reducer payload:", action.payload);
       return {
         ...state,
         allPizzas: [

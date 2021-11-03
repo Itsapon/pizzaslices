@@ -1,6 +1,6 @@
 export const selectAllPizzas = (reduxState) => {
   const copy = [...reduxState.pizzas.allPizzas];
-  console.log("what is copy?", copy);
+  console.log("Pizzaselector all what is copy?", copy);
   return copy.sort((a, b) => {
     return b.bought - a.bought;
   });

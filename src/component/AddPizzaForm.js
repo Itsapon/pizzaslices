@@ -25,7 +25,7 @@ export default function AddPizzaForm() {
     // to make sure that the form does not redirect (which is normal browser behavior)
     event.preventDefault();
     const data = { name, description };
-    console.log("new pizza:", name, description);
+    console.log("form: new pizza:", name, description);
     dispatch(addPizza(data));
   };
 
