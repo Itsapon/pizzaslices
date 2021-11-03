@@ -1,4 +1,5 @@
 import "./App.css";
+import AddPizzaForm from "./component/AddPizzaForm";
 import PizzaList from "./component/PizzaList";
 
 function App() {
@@ -6,6 +7,9 @@ function App() {
     <div className="App">
       <div>
         <PizzaList />
+      </div>
+      <div>
+        <AddPizzaForm />
       </div>
     </div>
   );

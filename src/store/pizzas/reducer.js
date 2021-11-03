@@ -32,6 +32,24 @@ const initialState = {
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {
+    case "pizzas/add": {
+      console.log("this should be the payload:", action.payload);
+      return {
+        ...state,
+        allPizzas: [
+          ...state.allPizzas,
+          {
+            id: state.allPizzas.length + 1,
+            name: action.payload.name,
+            description: action.payload.description,
+            bought: 0,
+          },
+        ],
+      };
+    }
+    //case "path":{
+    //console log first to see if it arrived and the payload is correct.
+    //also add id here.}
     default: {
       return state;
     }
